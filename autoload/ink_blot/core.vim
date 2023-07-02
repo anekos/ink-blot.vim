@@ -4,7 +4,6 @@ let s:registered_buffer = -1
 
 function! ink_blot#core#on_buf_write_post()
   if s:registered_command == v:null
-    echoerr 'No command registered'
     return
   endif
 
